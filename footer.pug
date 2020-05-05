@@ -1,0 +1,39 @@
+footer.footer
+	.container
+		h2.header.header--center Contacts
+		.footer__contacts
+			form.footer__contacts__form(method="post", action="")
+				input.input.footer__contacts__input(type="text", placeholder="Your name:")
+				input.input.footer__contacts__input(type="email", placeholder="Your email:")
+				textarea.input.footer__contacts__input.footer__contacts__textarea(type="email", placeholder="Your message:")
+				input.button(type="submit", value="Send")
+
+			.footer__contacts__info
+				ul.footer__contacts__info__list
+					li.footer__contacts__info__item
+						img.footer__contacts__info__img(src="./images/skype-icon.png", alt="skype")
+						a.footer__contacts__info__link(href="skype:here_your_login_skype") here_your_login_skype
+					li.footer__contacts__info__item
+						img.footer__contacts__info__img(src="./images/icq-icon.png", alt="icq")
+						a.footer__contacts__info__link(href="icq:279679659") 279679659
+					li.footer__contacts__info__item
+						img.footer__contacts__info__img(src="./images/email-icon.png", alt="email")
+						a.footer__contacts__info__link(href="mailto:psdhtmlcss@mail.ru") psdhtmlcss@mail.ru
+					li.footer__contacts__info__item
+						img.footer__contacts__info__img(src="./images/phone-icon.png", alt="phone")
+						a.footer__contacts__info__link(href="tel:+800045685555") 80 00 4568 55 55
+
+				ul.footer__social-links__list
+					li.footer__social-links__item
+						a(href="https://twitter.com").footer__social-links__link
+					li.footer__social-links__item
+						a(href="https://fb.com").footer__social-links__link
+					li.footer__social-links__item
+						a(href="https://ru.linkedin.com").footer__social-links__link
+					li.footer__social-links__item
+						a(href="https://www.google.com").footer__social-links__link
+					li.footer__social-links__item
+						a(href="https://www.youtube.com/").footer__social-links__link
+
+	.footer__copyright
+		span.footer__copyright__text Copyright &copy; 2014 Product name · PSD HTML CSS
