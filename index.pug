@@ -6,4 +6,126 @@ html(lang="en")
 		title Document
 		link(rel="stylesheet", href="./style.css")
 	body
-		h1 HTML CSS 1
+
+		include ./header.pug
+
+		main
+			section.section
+				.container
+					img.section__img--right(src="./images/dark-rectangle.jpeg", alt="dark rectangle")
+					h2.header About your product
+					p.paragraph.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex,
+						magni, explicabo veniam incidunt in quam sapiente ut ipsum.
+					p.paragraph.
+						Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque,
+						ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat
+						quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+					.clrfx
+
+			section.section
+				.container
+					h2.header.header--center Dignity and pluses product
+					ul.worth__list
+						li.worth__item Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						li.worth__item Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						li.worth__item Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						li.worth__item Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						li.worth__item Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+						li.worth__item Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.
+
+			section.section
+				.container
+					h2.header.header--center Screenshots
+					ul.screenshots__list
+						li.screenshots__item
+							img.screenshots__img(src="./images/dark-rectangle--small.jpeg", alt="small dark rectangle")
+							h3.header The description for the image
+							p.paragraph Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+						li.screenshots__item
+							img.screenshots__img(src="./images/dark-rectangle--small.jpeg", alt="small dark rectangle")
+							h3.header The description for the image
+							p.paragraph Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+						li.screenshots__item
+							img.screenshots__img(src="./images/dark-rectangle--small.jpeg", alt="small dark rectangle")
+							h3.header The description for the image
+							p.paragraph Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+						li.screenshots__item
+							img.screenshots__img(src="./images/dark-rectangle--small.jpeg", alt="small dark rectangle")
+							h3.header The description for the image
+							p.paragraph Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+
+			section.section
+				.container
+					h2.header.header--center Reviews
+					ul.reviews__list
+						li.reviews__item
+							img.reviews__image(src="./images/dark-circle.png", alt="dark circle")
+							blockquote.reviews__content
+								p.paragraph Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+								name.reviews__author-name Lourens S.
+						li.reviews__item
+							img.reviews__image(src="./images/dark-circle.png", alt="dark circle")
+							blockquote.reviews__content
+								p.paragraph Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+								name.reviews__author-name Lourens S.
+						li.reviews__item
+							img.reviews__image(src="./images/dark-circle.png", alt="dark circle")
+							blockquote.reviews__content
+								p.paragraph Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+								name.reviews__author-name Lourens S.
+						li.reviews__item
+							img.reviews__image(src="./images/dark-circle.png", alt="dark circle")
+							blockquote.reviews__content
+								p.paragraph Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
+								name.reviews__author-name Lourens S.
+
+			section.section
+				.container
+					h2.header.header--center Buy it now
+					.advantages
+						.advantages__item
+							h3.header.header--center Standart
+							.advantages__price__wrapper
+								span.advantages__price__value $100
+							ol.advantages__list
+								li.advantages__list__item Porro Officia cumque sint deleniti
+								li.advantages__list__item Temo facere rem vitae odit
+								li.advantages__list__item Cum odio, iste quia doloribus autem
+								li.advantages__list__item Apperiam nulla ea neque
+							button.button.advantages__button Buy
+						.advantages__item
+							h3.header.header--center Premium
+							.advantages__price__wrapper
+								span.advantages__price__value $150
+							ol.advantages__list
+								li.advantages__list__item Porro Officia cumque sint deleniti
+								li.advantages__list__item Temo facere rem vitae odit
+								li.advantages__list__item Cum odio, iste quia doloribus autem
+								li.advantages__list__item Apperiam nulla ea neque
+								li.advantages__list__item Porro Officia cumque sint deleniti
+								li.advantages__list__item Temo facere rem vitae odit
+								li.advantages__list__item Cum odio, iste quia doloribus autem
+								li.advantages__list__item Apperiam nulla ea neque
+							button.button.advantages__button Buy
+						.advantages__item
+							h3.header.header--center Lux
+							.advantages__price__wrapper
+								span.advantages__price__value $200
+							ol.advantages__list
+								li.advantages__list__item Porro Officia cumque sint deleniti
+								li.advantages__list__item Temo facere rem vitae odit
+								li.advantages__list__item Cum odio, iste quia doloribus autem
+								li.advantages__list__item Apperiam nulla ea neque
+								li.advantages__list__item Porro Officia cumque sint deleniti
+								li.advantages__list__item Temo facere rem vitae odit
+								li.advantages__list__item Cum odio, iste quia doloribus autem
+								li.advantages__list__item Apperiam nulla ea neque
+								li.advantages__list__item Porro Officia cumque sint deleniti
+								li.advantages__list__item Temo facere rem vitae odit
+								li.advantages__list__item Cum odio, iste quia doloribus autem
+								li.advantages__list__item Apperiam nulla ea neque
+							button.button.advantages__button Buy
+
+			include ./footer.pug

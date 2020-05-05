@@ -1,0 +1,298 @@
+html
+	color: #333333
+	line-height: 24px
+	font-family: ArialMT, MyriadPro-Regular, AdobeInvisFont, Arial, sans-serif
+	font-size: 16px
+
+body
+	margin: 0
+	padding: 0
+
+ul
+	padding: 0
+	margin: 0
+
+	li
+		list-style-type: none
+
+.container
+	margin: 0 auto
+	width: 1180px
+	position: relative
+
+.clrfx
+	clear: both
+
+.button,
+.input
+	background-color: #ffffff
+	border-radius: 6px
+	border: none
+	color: #445162
+	display: block
+	font: inherit
+
+.button
+	cursor: pointer
+	height: 40px
+	margin: 0 auto
+	min-width: 140px
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 18px
+
+.input
+	box-sizing: border-box
+	padding: 14px 10px
+	margin: 0 0 20px 0
+	width: 100%
+	font-size: 16px
+
+	&::placeholder
+		color: #445162
+
+textarea.input
+	min-height: 170px
+	resize: vertical
+
+.header
+	color: #445161
+	margin: 0 0 34px 0
+	font-weight: normal
+	font-size: 30px
+
+	&--center
+		text-align: center
+
+	&--main
+		color: inherit
+		margin: 0 0 50px 0
+		font-size: 60px
+
+.paragraph
+	font-size: 16px
+	margin: 0 0 20px 0
+
+.main
+	&__header
+		background-color: #445162
+		color: #ffffff
+		padding: 50px 0
+
+	&__list
+		&__item
+			margin-bottom: 15px
+			font-size: 20px
+
+			&::before
+				background-image: url('./images/check-icon.png')
+				content: ''
+				display: inline-block
+				margin: 0 10px 0 0
+				height: 19px
+				width: 25px
+
+	&__img
+		float: right
+
+.section
+	padding: 50px 0
+
+	&:nth-child(even)
+		background: #f5f5f5
+
+	.paragraph
+		max-width: 650px
+
+	&__img
+		&--right
+			float: right
+
+.worth
+	&__list
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		display: flex
+		margin: 0 22px 35px 0
+		width: 570px
+
+		&:nth-child(2n)
+			margin: 0 0 35px 0
+
+		&:nth-last-child(-n+2)
+			margin-bottom: 0
+
+		&::before
+			background-image: url('./images/worth-icon.jpeg')
+			content: ''
+			display: block
+			height: 33px
+			margin-right: 9px
+			width: 33px
+			padding-right: 23px
+
+.screenshots
+	&__list
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		width: 576px
+		margin: 0 10px 30px 0
+
+		&:nth-child(2n)
+			margin: 0 0 30px 0
+
+		.header
+			margin: 0 0 6px 0
+			font-size: 24px
+
+		.paragraph
+			margin: 0
+
+	&__img
+		margin: 0 15px 0 0
+		float: left
+
+.reviews
+	&__list
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		display: flex
+		margin: 0 30px 24px 0
+		width: 575px
+
+		&:nth-child(2n)
+			margin: 0 0 24px 0
+
+	&__image
+		display: block
+		height: 76px
+		width: 76px
+
+	&__content
+		background-color: #ebebeb
+		border-radius: 6px
+		line-height: 18px
+		margin: 0 0 0 28px
+		padding: 16px
+		position: relative
+		width: 470px
+		font-size: 14px
+
+		&::before
+			background: linear-gradient(45deg, rgba(235,235,235,1) 50%, rgba(235,235,235,0) 50%)
+			content: ''
+			display: block
+			height: 24px
+			left: -8px
+			position: absolute
+			top: 28px
+			transform: rotateZ(45deg)
+			width: 24px
+
+		.paragraph
+			font-size: inherit
+			margin-bottom: 8px
+			font-style: italic
+
+	&__author-name
+		color: #989898
+
+.advantages
+	align-items: flex-end
+	display: flex
+	justify-content: space-around
+
+	&__list
+		margin: 0
+		padding: 20px 20px 20px 36px
+		font-size: 14px
+
+	&__item
+		background-color: #445162
+		border-radius: 6px
+		color: #ffffff
+		display: flex
+		flex-direction: column
+		padding: 20px 0
+
+		.header
+			color: inherit
+			margin: 0 0 20px 0
+
+	&__price
+		&__wrapper
+			align-items: center
+			background-color: #ffffff
+			display: flex
+			justify-content: center
+			height: 68px
+			margin: 0 2px
+
+		&__value
+			color: #445162
+			font-size: 40px
+
+	&__button
+		margin: 0 20px
+
+.footer
+	background-color: #445162
+	padding: 50px 0 0 0
+
+	.header
+		color: #ffffff
+
+	&__contacts
+		display: flex
+		justify-content: center
+
+		&__form
+			width: 500px
+			margin: 0 50px 0 0
+
+		&__info
+			&__item
+				align-items: center
+				display: flex
+				margin: 0 0 20px 0
+
+			&__link
+				color: #ffffff
+				text-decoration: none
+
+				&:hover
+					text-decoration: underline
+
+			&__img
+				margin: 0 6px 0 0
+
+	&__social-links
+		&__list
+			background-image: url('./images/social-icons.png')
+			background-repeat: no-repeat
+			display: flex
+			margin: 30px 0 0 0
+
+		&__item
+			cursor: pointer
+			height: 42px
+			margin: 0 6px 0 0
+			width: 43px
+
+		&__link
+			display: block
+			width: 100%
+			height: 100%
+
+	&__copyright
+		background-color: #ffffff
+		color: #445162
+		margin: 48px 0 0 0
+		text-align: center
+		font-size: 12px
