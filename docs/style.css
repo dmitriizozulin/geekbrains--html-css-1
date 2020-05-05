@@ -101,7 +101,7 @@ textarea.input {
 
 .main__list__item::before {
   background-image: url("./images/check-icon.png");
-  content: '';
+  content: "";
   display: inline-block;
   margin: 0 10px 0 0;
   height: 19px;
@@ -143,13 +143,13 @@ textarea.input {
   margin: 0 0 35px 0;
 }
 
-.worth__item:nth-last-child(-n+2) {
+.worth__item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 
 .worth__item::before {
   background-image: url("./images/worth-icon.jpeg");
-  content: '';
+  content: "";
   display: block;
   height: 33px;
   margin-right: 9px;
@@ -219,7 +219,7 @@ textarea.input {
 
 .reviews__content::before {
   background: linear-gradient(45deg, #ebebeb 50%, rgba(235, 235, 235, 0) 50%);
-  content: '';
+  content: "";
   display: block;
   height: 24px;
   left: -8px;
