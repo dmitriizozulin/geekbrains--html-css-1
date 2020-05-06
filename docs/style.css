@@ -1,7 +1,6 @@
 html {
   color: #333333;
-  line-height: 24px;
-  font-family: ArialMT, MyriadPro-Regular, AdobeInvisFont, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -20,8 +19,10 @@ ul li {
 }
 
 .container {
+  box-sizing: border-box;
   margin: 0 auto;
-  width: 1180px;
+  width: 1280px;
+  padding: 0 50px;
   position: relative;
 }
 
@@ -51,8 +52,8 @@ ul li {
 
 .input {
   box-sizing: border-box;
-  padding: 14px 10px;
-  margin: 0 0 20px 0;
+  padding: 10px 8px;
+  margin: 0 0 22px 0;
   width: 100%;
   font-size: 16px;
 }
@@ -68,7 +69,8 @@ textarea.input {
 
 .header {
   color: #445161;
-  margin: 0 0 34px 0;
+  line-height: 0.8;
+  margin: 0 0 32px 0;
   font-weight: normal;
   font-size: 30px;
 }
@@ -79,23 +81,25 @@ textarea.input {
 
 .header--main {
   color: inherit;
-  margin: 0 0 50px 0;
+  line-height: 0.8;
+  margin: 0 0 46px 0;
   font-size: 60px;
 }
 
 .paragraph {
+  line-height: 1.4;
+  margin: 0 0 16px 0;
   font-size: 16px;
-  margin: 0 0 20px 0;
 }
 
 .main__header {
   background-color: #445162;
   color: #ffffff;
-  padding: 50px 0;
+  padding: 48px 0 40px 0;
 }
 
 .main__list__item {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   font-size: 20px;
 }
 
@@ -103,7 +107,7 @@ textarea.input {
   background-image: url("./images/check-icon.png");
   content: "";
   display: inline-block;
-  margin: 0 10px 0 0;
+  margin: 0 8px 0 0;
   height: 19px;
   width: 25px;
 }
@@ -116,12 +120,20 @@ textarea.input {
   padding: 50px 0;
 }
 
+.section--screenshots {
+  padding-bottom: 22px;
+}
+
+.section--advantages {
+  padding-top: 25px;
+}
+
 .section:nth-child(even) {
   background: #f5f5f5;
 }
 
 .section .paragraph {
-  max-width: 650px;
+  max-width: 652px;
 }
 
 .section__img--right {
@@ -129,18 +141,19 @@ textarea.input {
 }
 
 .worth__list {
-  display: flex;
-  flex-wrap: wrap;
+  padding-left: 42px;
 }
 
 .worth__item {
-  display: flex;
-  margin: 0 22px 35px 0;
-  width: 570px;
+  display: inline-block;
+  line-height: 1.4;
+  margin: 0 56px 32px 0;
+  width: 530px;
+  position: relative;
 }
 
 .worth__item:nth-child(2n) {
-  margin: 0 0 35px 0;
+  margin: 0 0 32px 0;
 }
 
 .worth__item:nth-last-child(-n + 2) {
@@ -149,12 +162,15 @@ textarea.input {
 
 .worth__item::before {
   background-image: url("./images/worth-icon.jpeg");
+  background-position: center;
   content: "";
   display: block;
-  height: 33px;
+  height: 30px;
+  left: -42px;
   margin-right: 9px;
-  width: 33px;
-  padding-right: 23px;
+  width: 30px;
+  position: absolute;
+  top: 0;
 }
 
 .screenshots__list {
@@ -164,19 +180,20 @@ textarea.input {
 
 .screenshots__item {
   width: 576px;
-  margin: 0 10px 30px 0;
+  margin: 0 14px 20px 0;
 }
 
 .screenshots__item:nth-child(2n) {
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 
 .screenshots__item .header {
-  margin: 0 0 6px 0;
+  margin: 0 0 15px 0;
   font-size: 24px;
 }
 
 .screenshots__item .paragraph {
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -192,12 +209,12 @@ textarea.input {
 
 .reviews__item {
   display: flex;
-  margin: 0 30px 24px 0;
+  margin: 0 30px 16px 0;
   width: 575px;
 }
 
 .reviews__item:nth-child(2n) {
-  margin: 0 0 24px 0;
+  margin: 0 0 16px 0;
 }
 
 .reviews__image {
@@ -211,7 +228,7 @@ textarea.input {
   border-radius: 6px;
   line-height: 18px;
   margin: 0 0 0 28px;
-  padding: 16px;
+  padding: 14px;
   position: relative;
   width: 470px;
   font-size: 14px;
@@ -242,12 +259,12 @@ textarea.input {
 .advantages {
   align-items: flex-end;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .advantages__list {
   margin: 0;
-  padding: 20px 20px 20px 36px;
+  padding: 14px 20px 16px 36px;
   font-size: 14px;
 }
 
@@ -256,13 +273,20 @@ textarea.input {
   border-radius: 6px;
   color: #ffffff;
   display: flex;
+  line-height: 24px;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 16px 0;
+  width: 300px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-right: 46px;
 }
 
 .advantages__item .header {
   color: inherit;
   margin: 0 0 20px 0;
+  font-size: 24px;
 }
 
 .advantages__price__wrapper {
@@ -285,7 +309,7 @@ textarea.input {
 
 .footer {
   background-color: #445162;
-  padding: 50px 0 0 0;
+  padding: 56px 0 0 0;
 }
 
 .footer .header {
@@ -299,7 +323,7 @@ textarea.input {
 
 .footer__contacts__form {
   width: 500px;
-  margin: 0 50px 0 0;
+  margin: 0 46px 0 8px;
 }
 
 .footer__contacts__info__item {
@@ -344,7 +368,9 @@ textarea.input {
 .footer__copyright {
   background-color: #ffffff;
   color: #445162;
+  letter-spacing: 0.3px;
   margin: 48px 0 0 0;
+  padding: 8px 0;
   text-align: center;
   font-size: 12px;
 }
