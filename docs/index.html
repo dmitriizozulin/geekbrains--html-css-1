@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product Name</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="main__header">
+      <video
+        class="main__video"
+        src="./videos/header-video.mp4"
+        loop="loop"
+        autoplay="autoplay"
+      ></video>
       <div class="container">
-        <img
-          class="main__img"
-          src="./images/white-rectangle.jpeg"
-          alt="white rectangle"
-        />
         <h1 class="header header--main">Product name</h1>
         <ul class="main__list">
           <li class="main__list__item">
@@ -334,14 +335,19 @@
               <input
                 class="input footer__contacts__input"
                 type="text"
-                placeholder="Your name:"
+                placeholder="Your Name:"
+                pattern="^([A-ZА-ЯЁ][a-zа-яё]+\s[A-ZА-ЯЁ][a-zа-яё]+)$"
+                required="required"
               /><input
                 class="input footer__contacts__input"
                 type="email"
                 placeholder="Your email:"
+                pattern="^([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,})$"
+                required="required"
               /><textarea
                 class="input footer__contacts__input footer__contacts__textarea"
                 placeholder="Your message:"
+                required="required"
               ></textarea
               ><input class="button" type="submit" value="Send" />
             </form>
