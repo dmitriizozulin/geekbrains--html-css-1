@@ -83,6 +83,15 @@ textarea.input
 		background-color: #445162
 		color: #ffffff
 		padding: 48px 0 40px 0
+		position: relative
+
+	&__video
+		height: 100%
+		width: 100%
+		object-fit: cover
+		object-position: center
+		position: absolute
+		top: 0
 
 	&__list
 		&__item
@@ -317,5 +326,23 @@ textarea.input
 		padding: 8px 0
 		text-align: center
 		font-size: 12px
+
+.fullscreen
+	&__video
+		height: 100vh
+		left: 0
+		object-fit: cover
+		object-position: center
+		position: absolute
+		top: 0
+		width: 100vw
+
+	&__header
+		color: #ffffff
+		font-size: 70px
+		left: 50%
+		position: absolute
+		top: 50%
+		transform: translate(-50%, -50%)
 
 @import _media

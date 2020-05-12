@@ -14,6 +14,9 @@
 	.reviews__item
 		width: 470px
 
+	.advantages__item:not(:last-child)
+		margin-right: 20px
+
 @media screen and ( max-width: 1080px)
 	.container
 		width: 100%
@@ -31,6 +34,7 @@
 		align-items: center
 		justify-content: center
 		flex-direction: column-reverse
+		width: 100%
 
 	.worth__item,
 	.screenshots__item,
@@ -42,7 +46,15 @@
 	.advantages__item
 		margin-right: 0 !important
 		margin-left: 0 !important
-		width: 100%
+		margin-bottom: 40px
+		width: 50%
+
+	.advantages__list
+		margin: 0 auto
+		width: auto
+
+		&:first-child
+			margin-bottom: 0
 
 	.header
 		margin-bottom: 40px
@@ -77,7 +89,7 @@
 	.main__header .container,
 	.section .container,
 	.worth__list,
-	.screenshots__list,
+	// .screenshots__list,
 	.reviews__list
 		width: 100%
 		padding: 0 10px
@@ -87,10 +99,31 @@
 		margin: 0 10px 40px 20px
 
 	.screenshots__item,
-	.reviews__item,
 	.advantages__item
 		width: 100%
 		margin: 0 10px 40px 0
+
+	.advantages__item
+		width: 80%
+
+	.reviews__item
+		align-items: center
+		display: flex
+		flex-direction: column
+		width: 100%
+
+		.reviews__image
+			margin: 0 0 20px 0
+
+		.reviews__content
+			margin: 0
+			width: auto
+
+			&::before
+				background: linear-gradient(135deg, #ebebeb 50%, rgba(235, 235, 235, 0) 50%)
+				left: 50%
+				top: -8px
+				transform: translateX(-50%) rotateZ(45deg)
 
 	.main__img,
 	.section__img,
