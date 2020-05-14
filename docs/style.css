@@ -545,4 +545,12 @@ textarea.input {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .screenshots__img {
+    display: block;
+    float: none;
+    margin: 0 auto 15px auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
